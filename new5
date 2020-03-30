@@ -1,0 +1,8 @@
+a = input('请输入一些数字： ')
+print(a)
+a = a.split(',')
+print(a)
+list1 = [int(a[i]) for i in range(len(a))]
+print(list1)
+list2 = list1
+print(list2)

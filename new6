@@ -1,0 +1,4 @@
+names = ['hongtao','xiaoweihong','hongyuchan','hongyumi']
+for name in names:
+    print(name)
+    print(name.title()+', How do you do!')

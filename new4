@@ -1,0 +1,13 @@
+list2 = [i for i in range(1,100)]
+print(sum(list2))
+print(max(list2))
+print(min(list2))
+
+list = [i for i in range(1,21,2)]
+print(list)
+
+list3 = [i for i in range(3,31) if i%3==0]
+print(list3)
+
+list4 = [i**3 for i in range(1,11)]
+print(list4)

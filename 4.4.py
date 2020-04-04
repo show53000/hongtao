@@ -22,8 +22,8 @@ class Car():
         self.odometer_reading += miles
 
 class ElectricCar(Car):
-    def _init_(self,make,model,year):
-        super.__init__(make,model,year)
+    def __init__(self,make,model,year):
+        super().__init__(make,model,year)
 
 my_tesla = ElectricCar('tesla','model S',2016)
 print(my_tesla.get_descriptive_name())

@@ -4,8 +4,8 @@
 
 class User():
     def __init__(self,first_name,last_name):
-        self.first_name=first_name
-        self.last_name=last_name
+        self.first_name = first_name
+        self.last_name = last_name
         self.login_attempts = 5
 
     def describe_user(self):
@@ -24,18 +24,20 @@ class User():
         self.login_attempts = 0
         print('Number of logins is clear!'+'Total '+str(self.login_attempts)+' logins')
         return self.login_attempts
+
 class Privileges():
     def __init__(self,privileges):
         self.privileges = ['can add post', 'can delete post', 'can ban user']
 
     def show_privileges(self):
+        print("Admin permission : ")
         for privilege in self.privileges:
-            print("Admin permission : " + privilege)
+            print(privilege)
 
 class Admin(User):
     def __init__(self,first_name,last_name):
         super().__init__(first_name,last_name)
-        self.privileges = Privileges(User)
+        self.privileges = Privileges(Admin)
 
 
 

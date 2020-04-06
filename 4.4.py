@@ -40,8 +40,8 @@ class ElectricCar(Car):
 
 
 
-my_tesla = ElectricCar('tesla','model S',2016)
-print(my_tesla.get_descriptive_name())
-my_tesla.battery.upgrade_battery()
-my_tesla.battery.discrib_battery()
+# my_tesla = ElectricCar('tesla','model S',2016)
+# print(my_tesla.get_descriptive_name())
+# my_tesla.battery.upgrade_battery()
+# my_tesla.battery.discrib_battery()
 

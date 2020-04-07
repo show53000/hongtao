@@ -36,12 +36,16 @@ from random import randint
 # x = randint(1,6)
 # print(x)
 class Die():
-    def __init__(self,roll_number):
-        self.roll_number = randint(1,6)
-
     def roll_die(self):
-        print('The number is : '+ str(self.roll_number))
+        count = 0
+        while count <= 5:
+            roll_number = randint(1, 6)
+            print('The number is : '+ str(roll_number))
+            count += 1
 
-my_die = Die(10)
+
+
+my_die = Die()
 my_die.roll_die()
+
 

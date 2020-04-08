@@ -1,0 +1,3 @@
+In Python you can Scientific calculation
+In Python you can Data analysis
+In Python you can Internet worm

@@ -16,14 +16,10 @@
 filename = 'learning_python.txt'
 with open(filename) as file_object:
     lines = file_object.readlines()
-pi_string = ' '
+lib = []
 for line in lines:
-    line.rstrip() += pi_string
+    lib.append(line)
 
-
-
-    pi_string += line.rstrip()
-
-print(pi_string)
-print(len(pi_string))
+print(lib)
+print(len(lib))
 

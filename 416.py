@@ -1,13 +1,13 @@
 import datetime
 import time
 today = datetime.date.today()
-yesterday = today - datetime.timedelta(days=1)
+yesterday = today - datetime.timedelta(days=0)
 import pandas as pd
 import datetime
-path = "D:/日常工作/发布站相关/发布站数据/baidu416.csv"
+path = "D:/日常工作/发布站相关/发布站数据/baidu417.csv"
 date = pd.read_csv(path,encoding='gbk',header=6)
 df = date.drop(['账户','匹配模式','关键词ID','商桥转化','网页转化'],axis=1)
-path2 = "D:/日常工作/发布站相关/发布站数据/time_baidu416.csv"
+path2 = "D:/日常工作/发布站相关/发布站数据/time_baidu417.csv"
 date2 = pd.read_csv(path2,encoding='gbk',header=6)
 df2 = date2.drop(['账户','商桥转化','网页转化'],axis=1)
 CPC = df[df['消费']>0]['消费'].sum(axis=0) / df[df['点击']>0]['点击'].sum(axis=0)
